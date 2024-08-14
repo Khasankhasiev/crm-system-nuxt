@@ -11,7 +11,7 @@ export default defineNuxtConfig({
          }
        }
       }
-  ], "@nuxt/icon"], 
+  ], "@nuxt/icon", '@pinia/nuxt',], 
   shadcn: {
     /**
      * Prefix for all the imported component
@@ -22,6 +22,9 @@ export default defineNuxtConfig({
      * @default "./components/ui"
      */
     componentDir: './components/ui'
+  },
+  pinia: {
+    storesDirs: ['./store/**']
   }
 
 })
